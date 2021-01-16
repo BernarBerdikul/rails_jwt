@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: VD_api
+  username: VD_api
+  password: VD_api
+  host: localhost
+  port: 5432
+
+test:
+  <<: *default
+  database: VD_api
+
+production:
+  <<: *default
+  database: VD_api_production
+  username: VD_api
+  password: <%= ENV['VD_API_DATABASE_PASSWORD'] %>
