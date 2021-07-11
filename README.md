@@ -16,11 +16,11 @@ Installation
 
     Clone this project
 
-      $ git clone https://github.com/riskimidiw/rails-jwt.git
+      $ git clone https://github.com/BernarBerdikul/rails_jwt.git
 
     Change directory to this project
 
-      $ cd VD_api
+      $ cd rails_jwt
 
     Install dependencies
 
